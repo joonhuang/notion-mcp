@@ -1,6 +1,8 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { registerToolsForSearch } from "./services/search.js";
+import { registerToolsForBlock } from "./services/block.js";
+import { registerToolsForPage } from "./services/page.js";
 
 // Create server instance
 const server = new McpServer({
@@ -14,6 +16,8 @@ const server = new McpServer({
 
 // Register tools
 registerToolsForSearch(server);
+registerToolsForBlock(server);
+registerToolsForPage(server);
 
 
 async function main() {
