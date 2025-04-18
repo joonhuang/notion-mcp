@@ -36,4 +36,14 @@ Before starting, ensure you have the following:
    npx @modelcontextprotocol/inspector node build/app.js
    ```
 
+4. **Run with Claude Desktop**:
+   Open up the Claude Desktop > Settings > Developer > Edit Config
+   ```json
+   "notion": {
+      "command": "node",
+      "args": [
+        "/Users/<username>/notion-mcp/build/app.js"
+      ]
+    }
+   ```
 This will start the application and allow you to inspect and test the registered tools.
