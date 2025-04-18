@@ -19,7 +19,6 @@ Before starting, ensure you have the following:
    ```properties
    NOTION_API_KEY=<YOUR NOTION INTEGRATION API>
    ```
-
 ## How to Start
 1. **Install Dependencies**:
    ```bash
