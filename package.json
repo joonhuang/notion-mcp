@@ -1,0 +1,30 @@
+{
+  "name": "notion-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server for Notion Application",
+  "type": "module",
+  "bin": {
+    "weather": "./build/app.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/app.js"
+  },
+  "files": [
+    "build"
+  ],
+  "keywords": [
+    "notion",
+    "mcp"
+  ],
+  "author": "joonhuang.phor",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.0",
+    "@notionhq/client": "^2.3.0",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  }
+}
